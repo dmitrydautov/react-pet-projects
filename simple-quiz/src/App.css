@@ -1,0 +1,61 @@
+.App {
+	text-align: center;
+}
+
+#quiz-progress-bar {
+	width: 70%;
+	height: 20px;
+}
+
+#question-window {
+	margin: 100px auto;
+	width: 40%;
+	border-radius: 5px;
+	border: 1px gray solid;
+	padding: 20px;
+	box-shadow: 0 1px 5px -1px rgba(80, 80, 80, 0.9);
+}
+
+#question-window ul {
+	margin-top: 50px;
+	padding: 0;
+}
+
+#question-window li, button {
+	list-style: none;
+	border-radius: 5px;
+	border: 1px gray solid;
+	margin: 25px;
+	padding: 15px;
+	transition: all 0.1s ease-in-out;
+	font-size: 1.2em;
+	cursor: pointer;
+	box-shadow: 0 1px 5px -1px rgba(80, 80, 80, 0.9);
+}
+
+#question-window li:hover, button:hover {
+	transform: translateY(1px);
+	background-color: rgba(221, 221, 221);
+}
+
+#question-window li:active, button:active {
+	opacity: 0.5;
+}
+
+.disabled-option {
+	pointer-events: none;
+	opacity: 0.2;
+}
+
+.correctAnswer {
+	background-color: green !important;
+}
+
+.wrongAnswer {
+	background-color: red !important;
+}
+
+#result img {
+	margin-top: 100px;
+	width: 20%;
+}
